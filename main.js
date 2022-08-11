@@ -130,7 +130,6 @@ const subirNivel = () => {
     nivel.innerText = niveles[contNivel];
     cuentaReg = 20;
     tiempo.innerText = `Tiempo: ${cuentaReg}s`;
-  }else{
     contNivel = 0;
   }
 }
