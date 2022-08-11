@@ -96,8 +96,6 @@ const subirNivel = () => {
   
   setTimeout(estadoInicial, 3000);
   
-  contNivel++;
-  
   const niveles = [
     'Nivel: 1',
     'Nivel: 2',
@@ -131,7 +129,9 @@ const subirNivel = () => {
     cuentaReg = 20;
     tiempo.innerText = `Tiempo: ${cuentaReg}s`;
     contNivel = 0;
+    return;
   }
+  contNivel++;
 }
 
 //lógica del juego
