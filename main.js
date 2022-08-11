@@ -124,11 +124,8 @@ const subirNivel = () => {
     nivel.innerText = niveles[contNivel];
     cuentaReg = 25;
     tiempo.innerText = `Tiempo: ${cuentaReg}s`;
-  }else if(contNivel === 5) {
-    nivel.innerText = niveles[contNivel];
-    cuentaReg = 20;
-    tiempo.innerText = `Tiempo: ${cuentaReg}s`;
-    contNivel = 0;
+  } else {
+    alerta("Superaste todos los niveles");
     return;
   }
   contNivel++;
